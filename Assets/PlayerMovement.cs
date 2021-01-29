@@ -8,8 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D player = new Rigidbody2D();
     Vector2 movement;
-    private int collectedParts = 0;
-    public int health = 100;
+    //private int collectedParts = 0;
+    //public int health = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -26,22 +26,22 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        player.MovePosition(player.position + movement * moveSpeed * Time.fixedDeltaTime);
+        player.MovePosition(player.position + (movement * moveSpeed * Time.fixedDeltaTime)); //Normalize(movement)
     }
 
-    private void Winner()
-    {
-        if (this.collectedParts == 5)
-        {
+   // private void Winner()
+   // {
+      //  if (this.collectedParts == 5)
+      //  {
             // Scene.load("Winner");
-        }
-    }
+      //  }
+   // }
 
-    private void GameOver()
-    {
-        if (this.health <= 0)
-        {
-            // Scene.load("GameOver");
-        }
-    }
+    //private void GameOver()
+    //{
+       // if (this.health <= 0)
+      //  {
+       //     // Scene.load("GameOver");
+      //  }
+  //  }
 }
