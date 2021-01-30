@@ -501,6 +501,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190040358924668878, guid: 705b845e74bd3844486ee28df0b5ab62,
         type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 2190040358924668878, guid: 705b845e74bd3844486ee28df0b5ab62,
+        type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
